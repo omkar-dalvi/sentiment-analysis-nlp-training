@@ -59,3 +59,7 @@ Repo for creating Sentiment analysis using NLP models
 
 --------
 
+> uv run ipython kernel install --user --env VIRTUAL_ENV $(pwd)/.venv --name=sentiment_analysis
+> uv run --with jupyter jupyter lab
+
+
