@@ -30,18 +30,33 @@ dependencies = [
 ]
 requires-python = "~=3.12.0"
 
-
-[tool.ruff]
-line-length = 99
-src = ["sentiment_analysis"]
-include = ["pyproject.toml", "sentiment_analysis/**/*.py"]
-
 [tool.ruff.lint]
-extend-select = ["I"]  # Add import sorting
-
-[tool.ruff.lint.isort]
-known-first-party = ["sentiment_analysis"]
-force-sort-within-sections = true
+select = [
+ # pycodestyle
+ "E",
+ # Pyflakes
+ "F",
+ # pyupgrade
+ "UP",
+ # flake8-bugbear
+ "B",
+ # flake8-simplify
+ "SIM",
+ # isort
+ "I",
+]
+  
+[tool.ruff]
+line-length = 88
+fix = true
+include = ["*.py", "*.ipynb"]
+output-format = "grouped"
+show-fixes = true
+  
+  
+  
+[tool.ruff.format]
+docstring-code-format = true
 
 [dependency-groups]
 dev = [
