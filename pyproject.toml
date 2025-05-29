@@ -13,14 +13,22 @@ classifiers = [
     "License :: OSI Approved :: MIT License"
 ]
 dependencies = [
+    "ipykernel>=6.29.5",
+    "ipython>=9.2.0",
     "mkdocs",
+    "nltk>=3.9.1",
     "pandas>=2.2.3",
     "pip",
+    "prettytable>=3.16.0",
     "pytest",
     "python-dotenv",
     "ruff",
+    "scikit-learn>=1.6.1",
+    "setuptools>=80.9.0",
+    "spacy>=3.8.7",
+    "ydata-profiling>=4.12.2",
 ]
-requires-python = "~=3.13.0"
+requires-python = "~=3.12.0"
 
 
 [tool.ruff]
